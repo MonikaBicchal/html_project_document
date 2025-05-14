@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Remix Icon link -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="home_style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <title>StayHub - Book Hostels Online</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><a href="home.html" class="stay">StayHub!</a></div>
+    <div class="hamburger" onclick="toggleMenu()"><i class="ri-menu-line"></i></div>
+    <ul id="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="Services.html">Service</a></li>
+      <li><a href="Aboutus.html">About</a></li>
+      <li><a href="loginpage.html">Login</a></li>
+      <li><a href="Contact_page.html">Partner With Us</a></li>
+    </ul>
+  </nav>
+  <marquee behavior="scroll" direction="left" scrollamount="6"
+    style="background-color: #007bff; color: white; padding: 0.5rem; font-weight: bold;">
+    📢 Welcome to StayHub! Get your room booked instantly. Stay safe. Stay smart.
+  </marquee>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="image/JGI-hostel.jpg" class="d-block w-100" alt="Hostel exterior">
+        <div class="carousel-caption">
+          <h1>You don't just <span>Stay </span>with us,<br>you Live with us!</h1>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="image/hostel_5.jpg" class="d-block w-100" alt="Hostel room">
+        <div class="carousel-caption">
+          <h1>You don't just <span>Stay </span>with us,<br>you Live with us!</h1>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="image/north_food_image.jpg" class="d-block w-100" alt="Hostel food">
+        <div class="carousel-caption">
+          <h1>You don't just <span>Stay </span>with us,<br>you Live with us!</h1>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Search Container -->
+    <div class="container_search">
+      <div class="search-section">
+        <select class="search-field">
+          <option>Select City</option>
+          <option>Bangalore</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Pune</option>
+        </select>
+
+        <select class="search-field">
+          <option>Select Hostel</option>
+          <option>Hostel A</option>
+          <option>Hostel B</option>
+          <option>Hostel C</option>
+        </select>
+
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <div class="container hostel-listings">
+    <div class="image-row">
+      <div class="hostel-img">
+        <img src="image/b_t.jpg" alt="FOUND Hostel" class="img">
+      </div>
+      <div class="details">
+        <div class="title">FOUND Hostel, San Francisco <span class="stars">★★★</span></div>
+        <div class="location">📍 Union Square, San Francisco · <a href="https://maps.app.goo.gl/x21DvmV5zz4y2QKz9"
+            target="_blank">Show on map</a></div>
+        <div class="tags">In the city centre · Near metro access</div>
+        <div class="room-type">Mixed Dormitory Room</div>
+        <div class="beds">1 bunk bed · Shared bathroom</div>
+        <div class="rating">Very Good <span class="rating-box">8.2</span> <small>(2,045 reviews)</small></div>
+      </div>
+      <div class="col">
+        <div class="price">₹ 2,199 <span class="tax">+ ₹ 300 taxes</span></div>
+        <a href="Avabality_found.html" class="button" id="btn">See availability</a>
+      </div>
+    </div>
+
+    <div class="image-row">
+      <div class="hostel-img">
+        <img src="image/bett_hostel.jpg" alt="Bett Hostels" class="img">
+      </div>
+      <div class="details">
+        <div class="title">Bett Hostels, Pune <span class="stars">★★★</span></div>
+        <div class="location">📍 197/1, Shivajinagar, Gaothan, Pune · <a
+            href="https://maps.app.goo.gl/ueAFpb5R67UZ8Dvo8">Show on map</a></div>
+        <div class="tags">GVG2+6X Pune, Maharashtra</div>
+        <div class="room-type">Mixed Dormitory Room</div>
+        <div class="beds">1 bunk bed · Shared bathroom</div>
+        <div class="rating">Very Good <span class="rating-box">8.2</span> <small>(2,504 reviews)</small></div>
+      </div>
+      <div class="col">
+        <div class="price">₹ 2,199 <span class="tax">+ ₹ 400 taxes</span></div>
+        <a href="Avability_bett_hostel.html" class="button" id="btn">See availability</a>
+      </div>
+    </div>
+
+    <div class="image-row">
+      <div class="hostel-img">
+        <img src="image/voyage_hostel.jpg" alt="The Voyage Hostel" class="img">
+      </div>
+      <div class="details">
+        <div class="title">The Voyage | Cafe | Hostel | Co-work <span class="stars">★★★★</span></div>
+        <div class="location">📍 A/2 The Voyage, Koregaon Park, Lane - 5, Pune · <a
+            href="https://maps.app.goo.gl/1SxyN9VVf1aRNFPN7">Show on map</a></div>
+        <div class="tags">GVQX+Q2 Pune, Maharashtra</div>
+        <div class="room-type">Mixed Dormitory Room</div>
+        <div class="beds">1 bunk bed · Shared bathroom</div>
+        <div class="rating">Very Good <span class="rating-box">8.0</span> <small>(2,045 reviews)</small></div>
+      </div>
+      <div class="col">
+        <div class="price">₹ 1,371 <span class="tax">+ ₹ 500 taxes</span></div>
+        <a href="Avability_voyag.html" class="button" id="btn">See availability</a>
+      </div>
+    </div>
+
+    <div class="image-row">
+      <div class="hostel-img">
+        <img src="image/hostells.jpg" alt="Hostells" class="img">
+      </div>
+      <div class="details">
+        <div class="title">Hostells <span class="stars">★★★★★</span></div>
+        <div class="location">📍 Office No 27, 3rd Floor, Gold Field Plaza, Bund Garden Rd, Pune · <a
+            href="https://maps.app.goo.gl/TpFSMuwnhyzLPC2j7">Show on map</a></div>
+        <div class="tags">Metro Station, Sangamvadi, Pune</div>
+        <div class="room-type">Mixed Dormitory Room</div>
+        <div class="beds">1 bunk bed · Shared bathroom</div>
+        <div class="rating">Very Good <span class="rating-box">8.9</span> <small>(2,045 reviews)</small></div>
+      </div>
+      <div class="col">
+        <div class="price">₹ 1,568 <span class="tax">+ ₹ 200 taxes</span></div>
+        <a href="#" class="button" id="btn">See availability</a>
+      </div>
+    </div>
+
+    <div class="image-row">
+      <div class="hostel-img">
+        <img src="image/Hostel Mantra.jpg" alt="Hostel Mantra" class="img">
+      </div>
+      <div class="details">
+        <div class="title">Hostel Mantra <span class="stars">★★★★</span></div>
+        <div class="location">📍 Bungalow no. 87, Jankidevi School Rd, Andheri West, Mumbai · <a
+            href="https://maps.app.goo.gl/1ih5QtUNgnsLpZaEA">Show on map</a></div>
+        <div class="tags">Andheri West</div>
+        <div class="room-type">Mixed Dormitory Room</div>
+        <div class="beds">1 bunk bed · Shared bathroom</div>
+        <div class="rating">Very Good <span class="rating-box">8.2</span> <small>(2,045 reviews)</small></div>
+      </div>
+      <div class="col">
+        <div class="price">₹ 1,604 <span class="tax">+ ₹ 300 taxes</span></div>
+        <a href="#" class="button" id="btn">See availability</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container1">
+      <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p>Email: info@stayhub.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: 123 Hostel Street, City</p>
+      </div>
+      <div class="footer-content">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Aboutus.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="facebook"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#" class="twitter"><i class="ri-twitter-fill"></i></a>
+          <a href="#" class="link"><i class="ri-linkedin-box-fill"></i></a>
+          <a href="#" class="instagram"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="bottom_bar">
+    <p>&copy; 2025 StayHub All rights reserved</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-links");
+      menu.classList.toggle("show");
+    }
+  </script>
+
+</body>
+
+</html>

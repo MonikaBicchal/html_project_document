@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      width: 400px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .subtext {
+      color: gray;
+      font-size: 14px;
+    }
+
+    .date-select {
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .date-select input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .option {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 12px 0;
+    }
+
+    .option-info {
+      flex-grow: 1;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .visit-btn {
+      background: #0066ff;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .official {
+      color: green;
+      font-size: 12px;
+    }
+
+    .features {
+      font-size: 13px;
+      color: #666;
+      margin-top: 4px;
+    }
+    .visit-btn1{
+    background: #0066ff;
+      color: white;
+      border: none;
+      padding: 4px 14px;
+      border-radius: 30px;
+      text-align: center;
+      padding-top: 6px;
+      cursor: pointer;
+
+       
+    }
+
+    .highlight {
+      background: #e6f0ff;
+      padding: 2px 6px;
+      font-size: 12px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 8px;
+      color: #003cb3;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bett  | Hostels | Hostel | Pune</h2>
+        <div class="subtext">Compare prices</div>
+        <div class="date-select">
+          <input type="text" placeholder="Wed, Apr 23">
+          <input type="text" placeholder="Thu, Apr 24">
+        </div>
+    
+        <div class="highlight">Featured options</div>
+    
+        <div class="option">
+          <div class="option-info">
+            <strong><a href="https://www.booking.com/">Booking.com</a></strong>
+            <div class="features">Free cancellation until 21 may</div>
+          </div>
+          <div>
+            <div class="price">₹1,371</div>
+            <button class="visit-btn">Visit site</button>
+          </div>
+        </div>
+    
+        <div class="option">
+          <div class="option-info">
+            <strong><a href="https://www.agoda.com/">Agoda</a></strong>
+            <div class="features">Free cancellation until 21 Apr • Free breakfast • Free Wi-Fi</div>
+          </div>
+          <div>
+            <div class="price">₹2,879</div>
+            <button class="visit-btn1">Visit site</button>
+          </div>
+        </div>
+    
+        <div class="option">
+          <div class="option-info">
+            <strong><a href="https://www.hostelworld.com/">Hostelworld</a></strong>
+            <div class="features">Free cancellation until 21 Apr • Free breakfast • Free Wi-Fi</div>
+          </div>
+          <div>
+            <div class="price">₹1,549</div>
+            <button class="visit-btn">Visit site</button>
+          </div>
+        </div>
+    
+        <div class="option">
+          <div class="option-info">
+            <strong><a href="https://www.goibibo.com/">Goibibo.com</a></strong>
+          </div>
+          <div>
+            <div class="price">₹1,524</div>
+            <button class="visit-btn">Visit site</button>
+          </div>
+        </div>
+    
+        <div class="section-title">All options</div>
+    
+        <div class="option">
+          <div class="option-info">
+            <strong><a href="https://www.booking.com/"> VOYAGE</a></strong> <span class="official">✔ Official site</span>
+            <div class="features">Free breakfast</div>
+          </div>
+          <div>
+            <div class="price">₹4,704</div>
+            <button class="visit-btn">Visit site</button>
+          </div>
+        </div>
+      </div>
+      <script>
+    function toggleComparison() {
+      const wrapper = document.getElementById('priceWrapper');
+      wrapper.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
